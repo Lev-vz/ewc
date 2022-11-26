@@ -6,7 +6,7 @@ const app = express();
 const urlencodedParser = express.urlencoded({extended: false});
   
 app.get("/", function (request, response) {
-    response.sendFile(__dirname + "/index.html");
+    response.sendFile(__dirname + "/index1.html");
 });
 app.post("/", urlencodedParser, function (request, response) {
     if(!request.body) return response.sendStatus(400);
